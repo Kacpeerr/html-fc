@@ -31,7 +31,7 @@
     <main>
       <article>
         <h2>Our Contact Form</h2>
-        <form action="">
+        <form action="https://httpbin.org/get" method="get">
           <fieldset>
             <legend>Send us a message</legend>
             <p>
@@ -65,7 +65,13 @@
               required
             ></textarea>
           </fieldset>
-          <button type="submit">Send</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Send
+          </button>
           <button type="reset">Reset</button>
         </form>
       </article>
